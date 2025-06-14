@@ -4,18 +4,28 @@
 ## 1. Project Overview
 <img width="320" alt="image" src="https://github.com/user-attachments/assets/8fc3cbfc-2622-4c65-b8b1-3340cc24b27c" />
 
+
 - The purpose of this project is to simulate the actual road environment through digital twin-based simulation and to practice the intelligent driving control technology of autonomous robots.
-- Key autonomous driving technologies such as object recognition, path control, and speed control were implemented using Gazebo simulators and TurtleBot3, ROS2, and YOLOv11.
+- Key autonomous driving technologies such as object recognition, path control, and speed control were implemented using Gazebo simulators and TurtleBot3, ROS2, and YOLOv11m.
 - The map utilized the robotis-emanual autorace provided by the existing 'Robotis'.
 https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/#autonomous-driving
 
-## 2. Project Procedures
+## 2.  Implementation Technology and Feature
 
-a. **Anesthesia:** Bring a sleep anesthesia mask to the patient's mouth prior to starting surgery.
+a. **Object Recognition** 
+YOLOv11-based implementation of recognition of various objects such as signs, traffic lights, pedestrians, etc.
 
-b. **Medical device object recognition:****** utilizes STT** to recognize **medical device keywords** within the data label class and picks up when the realsense camera recognizes the object of that keyword.
+Improved speed and real-time performance over traditional SIFT methods.
 
-c. **Hand object recognition:** The realsense camera on the gripper holding the object brings the medical device to the depth where the hand is located when the doctor recognizes the **hand object.
+b. **Traffic light recognition**
+Color masking and circular blob detection to recognize the status of three color traffic lights
+
+Transmit status to ROS Topic and reflect it in driving control
+
+c. **Intersection Sign Switching** 
+Plug-in (C++) switches left/right signs to time intervals
+
+Execute swivel logic based on sign recognition results
 
 d. When the medical device used by the doctor is recognized by the realsense camera and the medical device in the data label class is recognized, it is repositioned to the place where it was initially placed.
 
