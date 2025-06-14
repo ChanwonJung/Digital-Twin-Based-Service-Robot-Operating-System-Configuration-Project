@@ -2,6 +2,8 @@
 
 
 ## 1. Project Overview
+<img width="320" alt="image" src="https://github.com/user-attachments/assets/8fc3cbfc-2622-4c65-b8b1-3340cc24b27c" />
+
 - The purpose of this project is to simulate the actual road environment through digital twin-based simulation and to practice the intelligent driving control technology of autonomous robots.
 - Key autonomous driving technologies such as object recognition, path control, and speed control were implemented using Gazebo simulators and TurtleBot3, ROS2, and YOLOv11.
 
