@@ -1,0 +1,19 @@
+material course
+{
+  technique
+  {
+    pass
+    {
+      ambient 1 1 1 1       
+      diffuse 1 1 1 1     
+      specular 1 1 1 1        
+      emissive 0 0 0     
+      shininess 128       
+
+      texture_unit
+      {
+        texture course.png  
+      }
+    }
+  }
+}

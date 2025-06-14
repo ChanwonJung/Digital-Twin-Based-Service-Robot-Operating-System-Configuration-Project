@@ -1,0 +1,14 @@
+material pedestrian_box
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture pedestrian.png
+      }
+    }
+  }
+}
+

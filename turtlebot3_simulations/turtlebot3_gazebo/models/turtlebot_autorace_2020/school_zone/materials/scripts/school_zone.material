@@ -1,0 +1,14 @@
+material school_zone
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture school_zone.png
+      }
+    }
+  }
+}
+
