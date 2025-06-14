@@ -27,7 +27,13 @@ Plug-in (C++) switches left/right signs to time intervals
 
 Execute swivel logic based on sign recognition results
 
-d. When the medical device used by the doctor is recognized by the realsense camera and the medical device in the data label class is recognized, it is repositioned to the place where it was initially placed.
+d. **Situation-specific driving control** 
+- Situation Control Behavior
+- Speed bump deceleration (10 seconds)
+Decelerating to Children's Reservation (10 seconds)
+Stop crosswalk + pedestrian recognition (10 seconds)
+Speed limit 100 sign acceleration
+Speed limit 30 sign deceleration 88888888
 
 e. **Seal: **Seal at the incised area after recognition of the surgical site (Hemostat) depending on the medical device. **Seal is carried out at the incised area.
 
