@@ -6,9 +6,10 @@
 
 - The purpose of this project is to simulate the actual road environment through digital twin-based simulation and to practice the intelligent driving control technology of autonomous robots.
 - Key autonomous driving technologies such as object recognition, path control, and speed control were implemented using Gazebo simulators and TurtleBot3, ROS2, and YOLOv11.
+- The map utilized the robotis-emanual autorace provided by the existing 'Robotis'.
+https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/#autonomous-driving
 
-- The functions are as follows.
-### **1) robot_control node**
+## 2. Project Procedures
 
 a. **Anesthesia:** Bring a sleep anesthesia mask to the patient's mouth prior to starting surgery.
 
