@@ -30,12 +30,10 @@ Execute swivel logic based on sign recognition results
 d. **Situation-specific driving control** 
 - Situation Control Behavior
 - Speed bump deceleration (10 seconds)
-Decelerating to Children's Reservation (10 seconds)
-Stop crosswalk + pedestrian recognition (10 seconds)
-Speed limit 100 sign acceleration
-Speed limit 30 sign deceleration 88888888
-
-e. **Seal: **Seal at the incised area after recognition of the surgical site (Hemostat) depending on the medical device. **Seal is carried out at the incised area.
+- Decelerating to Children's Reservation (10 seconds)
+- Stop crosswalk + pedestrian recognition (10 seconds)
+- Speed limit 100 sign acceleration
+- Speed limit 30 sign deceleration
 
 
 
