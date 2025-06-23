@@ -29,12 +29,10 @@ I used a pre-trained YOLOv11n model as the base and fine-tuned it on our dataset
 
 b. **Traffic light recognition**
 Color masking and circular blob detection to recognize the status of three color traffic lights
-
 Transmit status to ROS Topic and reflect it in driving control
 
 c. **Intersection Sign Switching** 
 Plug-in (C++) switches left/right signs to time intervals
-
 Execute swivel logic based on sign recognition results
 
 d. **Situation-specific driving control** 
