@@ -120,3 +120,6 @@ $ ros2 launch turtlebot3_autorace_mission control_lane.launch.py
 $ ros2 run turtlebot3_teleop teleop_keyboard
 - Detect Traffic Light
 $ ros2 launch turtlebot3_autorace_detect detect_traffic_light.launch.py
+
+ros2 launch my_autonomous_pkg launcher_all.py
+
