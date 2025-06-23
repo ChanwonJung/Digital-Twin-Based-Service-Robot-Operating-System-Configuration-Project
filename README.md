@@ -18,7 +18,14 @@ https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/#auto
 a. **Object Recognition** 
 YOLOv11-based implementation of recognition of various objects such as signs, traffic lights, pedestrians, etc.
 
-Improved speed and real-time performance over traditional SIFT methods.
+I implemented object recognition using a YOLOv11-based approach to detect various objects such as road signs, traffic lights, and pedestrians in real-time.
+
+To tailor the detection to our autonomous driving scenario, we customized the YOLO model by adding new classes and manually labeling images to build a dedicated dataset. Through data augmentation techniques, we prepared a dataset consisting of 567 training images, 54 validation images, and 27 test images.
+
+I used a pre-trained YOLOv11n model as the base and fine-tuned it on our dataset. Compared to traditional SIFT-based object detection methods, YOLOv11 significantly improved detection speed and accuracy, making it highly suitable for real-time robotics applications.
+
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/6feb758a-a382-4489-8f0e-0a2a8f21872e" />
+
 
 b. **Traffic light recognition**
 Color masking and circular blob detection to recognize the status of three color traffic lights
@@ -37,6 +44,9 @@ d. **Situation-specific driving control**
 - Stop crosswalk + pedestrian recognition (10 seconds)
 - Speed limit 100 sign acceleration
 - Speed limit 30 sign deceleration
+
+<img width="488" alt="image" src="https://github.com/user-attachments/assets/2c53b387-ba52-469b-be00-a80ae8998c02" />
+
 
 e. **GUI(Using Tkinter)**
 - Configure the GUI using launcher_all.py, video.py
@@ -61,7 +71,7 @@ b. **Reliability-Based Centerline Detection**
 - Branch from the makeLine() function into four centerline calculation schemes:
 1) Both lanes detected (straight line): Calculate centerline based on mean value
 2) Only one lane detected: relative position correction (±230px) virtual centerline creation
-3) Curves larger: Create centerline based on reliable lane
+3) Curves larger: Create center line based on reliable lane
 4) Lane detection failure or low reliability: Lane tracking failure (lane_state = 0)
 
 c. **Curvature"**
@@ -83,7 +93,10 @@ After recognizing parking signs with YOLO, set the bounding box area to 600 to e
 2) Conditions for decreasing the fraction of the yellow line and increasing the fraction of the white line → Determining the path change
 3) Automatically straight forward, rotate, and align in conjunction with dynamic lane recognition
 
-## 5. Pedestrain model implementation
+## 5. Pedestrian model implementation
 - Implementation of walkers by supplementing existing models
 - Adjusting physical properties such as mass, coefficient of friction, and inertia ensures stable motion
 - Utilize gazebo_ros_planar_move plugins
+  
+## 6. Demo
+https://drive.google.com/file/d/1zM899omEa5Z9UyE7TN0GfyBFQqVfpBf2/view?usp=drive_link
