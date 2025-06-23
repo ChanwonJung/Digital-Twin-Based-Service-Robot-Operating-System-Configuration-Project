@@ -111,7 +111,6 @@ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 # 2. Camera Calibration
 # Intrinsic Calibration
 $ ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
-
 # Extrinsic Calibration
 $ ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
 
