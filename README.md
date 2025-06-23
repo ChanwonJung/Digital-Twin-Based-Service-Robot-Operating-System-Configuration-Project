@@ -105,6 +105,12 @@ https://drive.google.com/file/d/1zM899omEa5Z9UyE7TN0GfyBFQqVfpBf2/view?usp=drive
 ## 7. How to run
 > ROS2 Humble + Gazebo11 + TurtleBot3 environment
 
+## 🔧 How to Run
+
+```bash
+# 1. Launch the Simulation World (Gazebo)
+ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
+
 - TurtleBot3 launch
 $ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 - Camera Calibration
@@ -120,6 +126,4 @@ $ ros2 launch turtlebot3_autorace_mission control_lane.launch.py
 $ ros2 run turtlebot3_teleop teleop_keyboard
 - Detect Traffic Light
 $ ros2 launch turtlebot3_autorace_detect detect_traffic_light.launch.py
-
-ros2 launch my_autonomous_pkg launcher_all.py
 
