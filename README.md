@@ -102,28 +102,31 @@ After recognizing parking signs with YOLO, set the bounding box area to 600 to e
 ## 6. Demo
 https://drive.google.com/file/d/1zM899omEa5Z9UyE7TN0GfyBFQqVfpBf2/view?usp=drive_link
 
-## 7. How to run
-> ROS2 Humble + Gazebo11 + TurtleBot3 environment
-
 ## 🔧 How to Run
-
+> ROS2 Humble + Gazebo11 + TurtleBot3 environment
 ```bash
 # 1. Launch the Simulation World (Gazebo)
 ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 
-- TurtleBot3 launch
-$ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
-- Camera Calibration
+# 2. Camera Calibration
+# Intrinsic Calibration
 $ ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
+
+# Extrinsic Calibration
 $ ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
-- Object Detection
+
+# 3. Object Detection
 $ ros2 launch turtlebot3_autorace_detect detect_sign.launch.py mission:=yolo
-- Detect Lane
+
+# 4. Lane Detection
 $ ros2 launch turtlebot3_autorace_detect detect_lane.launch.py
-- Control Lane
+
+# 5. Lane Control
 $ ros2 launch turtlebot3_autorace_mission control_lane.launch.py
-- Teleop Key
+
+# 6. Teleop Key
 $ ros2 run turtlebot3_teleop teleop_keyboard
-- Detect Traffic Light
+
+# 7. Traffic Light Detection
 $ ros2 launch turtlebot3_autorace_detect detect_traffic_light.launch.py
 
